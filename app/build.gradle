@@ -24,6 +24,11 @@ android {
     dataBinding {
         enabled = true
     }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
@@ -44,4 +49,5 @@ dependencies {
     androidTestImplementation("com.schibsted.spain:barista:2.9.0") {
         exclude group: 'com.android.support', module: 'support-annotations'
     }
+    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.2.0'
 }
